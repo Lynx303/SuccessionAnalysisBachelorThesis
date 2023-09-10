@@ -213,7 +213,6 @@ analysis.summary.direct <- function(partner1, partner2, networks, n_random = 100
   timerange <- 1:length(networks)
   total_means <- diff.weighted.total(timerange, partner1, partner2, networks)
   totals_random <- diff.weighted.null(timerange, n_random, partner1, partner2)
-  interval_borders <- c(a/2, 1-a/2)
   
   interaction.results <- data.frame(matrix(ncol = length(colnames(total_means)), nrow = 0))
   
